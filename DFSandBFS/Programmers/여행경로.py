@@ -31,18 +31,6 @@ def solution(tickets):
     # bfs 탐색 시작. 시작은 항상 ICN 공항이기 때문에 전달되는 값들은 ICN
     dfs(airport="ICN", path=["ICN"])
 
-    print(answer)
     # 여러개의 경로가 나왔을 경우 알파벳 순서가 앞서는 경로를 return해야 하기 때문에 정렬
     answer.sort()
     return answer[0]
-
-
-
-tickets = [
-    ["ICN", "SFO"],
-    ["ICN", "ATL"],
-    ["SFO", "ATL"],
-    ["ATL", "ICN"],
-    ["ATL", "SFO"]
-]
-print(solution(tickets=tickets))
