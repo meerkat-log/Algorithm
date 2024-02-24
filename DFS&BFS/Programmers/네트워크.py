@@ -35,3 +35,5 @@ def solution(n, computers):
             answer = answer + 1
 
     return answer
+
+print("정답: ", solution(n=3, computers=[[1, 1, 0], [1, 1, 1], [0, 1, 1]]))

@@ -44,3 +44,5 @@ def solution(begin, target, words):
 
     answer.sort()
     return answer[0]
+
+print(solution(begin="hit", target="cog", words=["hot", "dot", "dog", "lot", "log"]))
